@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Theophillus</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <!-- Header Section -->
     <header>
         <h1>Theophillus Motsoane</h1>
@@ -18,30 +30,31 @@
         <h2>About Me</h2>
         <div class="about-container">
             <div class="about-text">
-                <p>Hi, I'm Theophillus Motsoane, a programmer passionate about Software Engineering and AI. I specialize in creating innovative solutions and i enjoy learning new technologies to enhance my skills.</p>
+                <p>Hi, I'm Theophillus Motsoane, a programmer passionate about Software Engineering and AI. I specialize in creating innovative solutions, and I enjoy learning new technologies to enhance my skills.</p>
             </div>
+            <img src="TheoPic.png" alt="Theophillus Motsoane" style="float: right; width: 300px; margin-right: 50px;">
         </div>
-        <img src="TheoPic.png" alt="Theophillus Motsoane" style="float: right;width: 300px;margin-right: 50px;">
     </section>
     
     <!-- Programming Languages Section -->
     <section id="languages">
         <h2>Programming Languages</h2>
         <ul>
-            <li>Frontend Development
+            <li>
+                Frontend Development
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
+                    <li><img src="icons8-html-48.png" alt="HTML Icon"> HTML</li>
+                    <li><img src="icons8-css-48.png" alt="CSS Icon"> CSS</li>
+                    <li><img src="icons8-javascript-64.png" alt="JavaScript Icon"> Javascript</li>
                 </ul>
             </li>
-            <li>Backend Development
+            <li>
+                Backend Development
                 <ul>
-                    <li>Python</li>
-                    <li>SQL</li>
+                    <li><img src="python-icon.png" alt="Python Icon"> Python</li>
+                    <li><img src="sql-icon.png" alt="SQL Icon"> SQL</li>
                 </ul>
             </li>
-            
         </ul>
     </section>
     
@@ -60,7 +73,7 @@
             <h3>IALE Institute of Learning</h3>
             <p>MCSE, IT (2016)</p>
         </div>
-        <p>Download <a href="Theophillus C.V and docs.pdf" download>My CV</a></p>
+        <p>Download <a href="Theophillus_CV_and_docs.pdf" download>My CV</a></p>
         <p>Visit My <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">LinkedIn</a></p>
     </section>
     
@@ -77,28 +90,55 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/TheoPhillus-Cloud/Basic-Calculator-Program">Project 1</a></li>
-            <li><a href="https://github.com/TheoPhillus-Cloud/Python-week2-assignment">Project 2</a></li>
-            <li><a href="https://github.com/your-project-link3" target="_blank">Project 3</a></li>
-        </ul>
+        <div class="project-container">
+            <div class="project-item">
+                <img src="9500_2_2_03.jpg" alt="Basic Calculator Project" class="project-image">
+                <a href="https://github.com/TheoPhillus-Cloud/Basic-Calculator-Program" target="_blank">Basic Calculator Program</a>
+            </div>
+            <div class="project-item">
+                <img src="programming8.jpg" alt="Python Week 2 Assignment" class="project-image">
+                <a href="https://github.com/TheoPhillus-Cloud/Python-week2-assignment" target="_blank">Python Week 2 Assignment</a>
+            </div>
+            <div class="project-item">
+                <img src="document-marketing.jpg" alt="Project 3" class="project-image">
+                <a href="https://github.com/your-project-link3" target="_blank">Project 3</a>
+            </div>
+        </div>
     </section>
     
     <!-- Contact Form Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form action="mailto:theo.motsoane@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <br>
-            <button type="submit">Send</button>
-        </form>
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <form action="mailto:theo.motsoane@gmail.com" method="post" enctype="text/plain">
+                <h3>Send A Comment  here:</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+    
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>My Contact Information</h3>
+                <ul>
+                    <li><strong>Name:</strong> Ntoane Theophillus</li>
+                    <li><strong>Surname:</strong> Motsoane</li>
+                    <li><strong>Email:</strong> theo.motsoane@gmail.com</li>
+                    <li><strong>Phone Number:</strong> +2768 473 8660</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <!-- Footer Section -->

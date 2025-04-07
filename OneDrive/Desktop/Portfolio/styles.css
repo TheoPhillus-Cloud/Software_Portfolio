@@ -1,45 +1,49 @@
-/* General styles */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff; /* Light azure background */
 }
 
-/* Header styling */
+/* Header Styling */
 header {
-    background-color: #333;
+    background-color: #4b0082; /* Indigo for bold elegance */
     color: #fff;
     padding: 20px;
     text-align: center;
+    border-bottom: 4px solid #7cfc00; /* Lime-green accent */
 }
 
-/* Section styling */
+/* Section Styling */
 section {
     padding: 20px;
     margin: 20px;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+    border-left: 6px solid #0078d4; /* Glossy blue accent */
 }
 
-/* Interests and Languages lists */
+/* Interests and Languages Lists */
 ul {
     list-style-type: square;
-    padding: 0;
-    margin: 0 0 20px 20px;
+    padding: 0 20px;
+    color: #333;
+    font-size: 1rem;
 }
 
-/* Footer styling */
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 15px;
+    background-color: #4b0082; /* Matching Indigo for consistency */
     color: #fff;
+    font-size: 0.9rem;
 }
 
-/* Contact form styling */
+/* Contact Form Styling */
 form {
     display: block;
     margin: 20px 0;
@@ -48,38 +52,419 @@ form {
 input, textarea, button {
     width: 100%;
     margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    background-color: #333;
+    background-color: #4b0082; /* Indigo button */
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-/* Styling for About Me section */
+button:hover {
+    background-color: #7cfc00; /* Lime-green hover effect */
+}
+
+/* About Me Section */
 #about {
     padding: 20px;
-    
+    background: linear-gradient(to right, #f0e68c, #ffffff); /* Subtle gradient */
+    border-radius: 10px; /* Rounded corners for a sleek look */
 }
 
 .about-container {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Adds space between image and text */
-} 
-
-.about-image {
-    width: 150px; /* Adjust the width of the image */
-    border-radius: 50%; /* Optional: makes the image circular */
+    display: flex; /* Flexbox layout to align text and image horizontally */
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Add space between the text and image */
 }
 
 .about-text {
-    flex: 1; /* Ensures the text takes up the remaining space */
-    line-height: 1.6;
+    flex: 1; /* Ensure the text takes up the remaining space */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
 }
-h2{
+
+.about-image {
+    width: 300px; /* Consistent image size */
+    border-radius: 10px; /* Slightly rounded corners */
+    border: 4px solid #0078d4; /* Glossy blue border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+
+/* Programming Languages Section */
+#languages {
+    padding: 20px;
+    background: linear-gradient(to left, #d1f0f0, #ffffff); /* New gradient for contrast */
+    border: 2px solid #0078d4; /* Define the section with a subtle border */
+    border-radius: 10px; /* Smooth corners */
+    color: #333; /* Text color for readability */
+    font-size: 1.1rem; /* Uniform font size */
+}
+
+#languages h2 {
+    text-align: center; /* Center-align the title */
+    color: #0078d4; /* Add a standout title color */
+    font-weight: bold;
+    margin-bottom: 15px; /* Spacing for clarity */
+}
+
+#languages ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Reset padding for clean layout */
+}
+
+#languages li {
+    display: flex;
+    align-items: center; /* Align icons, arrows, and text */
+    gap: 10px; /* Space between items */
+    margin-bottom: 10px; /* Space between each item */
+}
+
+#languages li:before {
+    content: "➤"; /* Colorful arrow as a bullet */
+    color: #ff6347; /* Bright red-orange arrow */
+    font-size: 1.2rem; /* Slightly larger arrow size */
+}
+
+#languages img {
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height to match width */
+}
+
+/* Sub-list styling (nested lists for frontend/backend) */
+#languages ul ul {
+    padding-left: 25px; /* Indentation for nested items */
+    margin-top: 5px;
+}
+
+#languages ul ul li:before {
+    content: "➥"; /* Smaller colorful arrow for nested items */
+    color: #ffa500; /* Gold for sub-items */
+    font-size: 1rem; /* Slightly smaller size */
+}
+
+/* Educational Background Section */
+#education {
+    padding: 20px;
+    background: linear-gradient(to right, #ffe4b5, #ffffff); /* Warm peach gradient */
+    border: 2px solid #0078d4; /* Stylish blue border for emphasis */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: #333; /* Text color for readability */
+    font-size: 1.1rem; /* Consistent font size */
+    margin-top: 20px; /* Space above the section */
+}
+
+#education h2 {
+    text-align: center;
+    color: #0078d4; /* Highlighted title color */
+    font-weight: bold;
+    font-size: 1.8rem; /* Larger font for the title */
+    margin-bottom: 15px; /* Space below title */
+    text-transform: uppercase;
+}
+
+#education div {
+    margin-bottom: 15px; /* Add space between entries */
+    padding: 10px;
+    background: #f7f7f7; /* Light background for each entry */
+    border-radius: 10px; /* Rounded corners for divs */
+    border: 1px solid #ddd; /* Subtle border around each entry */
+}
+
+#education div:hover {
+    background: #e0f7fa; /* Change background color on hover */
+    transform: scale(1.02); /* Slight enlargement for emphasis */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+#education a {
+    text-decoration: none; /* Remove underline */
+    color: #0078d4; /* Professional blue color */
+    font-weight: bold;
+    position: relative;
+}
+
+#education a:hover {
+    color: #ff6347; /* Change to bright coral on hover */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Hover effect for text */
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+#education a:after {
+    content: ''; /* Floating effect for links */
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #0078d4;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+
+#education a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Interests Section */
+#interests {
+    padding: 20px;
+    background: linear-gradient(to right, #f0e68c, #ffffff); /* Subtle gradient */
+}
+
+#interests ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Reset padding for clean layout */
+}
+
+#interests li {
+    display: flex;
+    align-items: center; /* Align icons and text properly */
+    gap: 10px; /* Space between the icon and the text */
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.1rem; /* Consistent font size */
+    color: #333; /* Text color for readability */
+}
+
+#interests img {
+    border-radius: 50%; /* Circular icons if appropriate for images */
+    border: 2px solid #0078d4; /* Glossy blue border */
+    width: 40px; /* Adjust icon size for better visibility */
+    height: 40px; /* Maintain aspect ratio */
+}
+
+/* Projects Section */
+#projects {
+    padding: 20px;
+    background: linear-gradient(to right, #e6f7ff, #ffffff); /* Cool blue gradient */
+    border: 2px solid #0078d4; /* Blue border for emphasis */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: #333;
+    font-size: 1.1rem;
+}
+
+#projects h2 {
+    text-align: center;
+    color: #0078d4; /* Title standout */
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between; /* Spread out project items horizontally */
+    align-items: center;
+    gap: 20px; /* Add space between project items */
+    flex-wrap: wrap; /* Ensure items wrap if screen size is small */
+}
+
+.project-item {
+    text-align: center;
+    width: 30%; /* Adjust width of project items for alignment */
+    background: #f7f7f7; /* Light background for individual project items */
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.project-image {
+    width: 100%; /* Full width for responsiveness */
+    max-height: 150px; /* Limit height for consistency */
+    object-fit: cover; /* Ensure images are neatly cropped */
+    border-radius: 10px; /* Smooth image corners */
     margin-bottom: 10px;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #0078d4; /* Professional blue color */
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.project-item a:hover {
+    color: #ff6347; /* Coral hover effect for links */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add hover text shadow */
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    background: linear-gradient(to right, #ffebcd, #ffffff); /* Warm beige gradient */
+    border: 2px solid #0078d4; /* Stylish blue border */
+    border-radius: 15px; /* Rounded corners for elegance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    font-size: 1.1rem; /* Consistent font size */
+}
+
+#contact h2 {
+    text-align: center;
+    color: #0078d4;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex; /* Align form and contact info side by side */
+    gap: 20px; /* Space between form and contact information */
+    align-items: flex-start; /* Proper alignment */
+}
+
+.contact-container h3 {
+    color: #0078d4;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+form {
+    flex: 1; /* Form takes up equal space */
+    padding: 15px;
+    background: #f7f7f7; /* Light background for the form */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+form input, form textarea {
+    width: 100%; /* Full-width fields for consistency */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: #005bb5; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Contact Info Styling */
+.contact-info {
+    flex: 0.5; /* Contact info takes less space */
+    padding: 15px;
+    background: #f7f7f7; /* Light background for the info */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-info h3 {
+    color: #0078d4;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* H2 Headings */
+h2 {
+    color: #4b0082;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0078d4; /* Underline effect */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background: linear-gradient(45deg, #0078d4, #50b3a2); /* Glossy gradient */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #b40e0e;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #7cfc00; /* Lime green for hover effect */
+    color: #000; /* Darker text */
+}
+
+/* For screens smaller than 768px (tablets, phones) */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack form and contact info vertically */
+    }
+
+    .project-container {
+        flex-direction: column; /* Stack projects vertically */
+    }
+
+    .project-item {
+        width: 100%; /* Make each project take full width */
+    }
+}
+
+/* For screens smaller than 480px (smaller phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem; /* Slightly reduce font size for smaller screens */
+    }
+
+    .project-item img {
+        max-height: 100px; /* Adjust image height for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Make buttons smaller */
+    }
 }
